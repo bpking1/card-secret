@@ -1,0 +1,21 @@
+alist:
+  url: http://localhost:5244/api/fs/get
+  token: alist-af8caf0a-07ff-4684-904a-76d5332658c5IgUsZmaxJa6XDqjfD3y316yMd9PhFE35qp8z2JlaWrjTvyUEyGNUF35eAZovWH91
+  drivePath: /amvAll
+
+plex:
+  #dbPath: /home/hj/software/plex/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db
+  dbPath: /home/hj/Downloads/Telegram Desktop/com.plexapp.plugins.library.db
+  mountPath: /data/amv
+
+# 参数说明: 
+
+# 1. drivePath , mountPath
+# 在plex的影片信息中查看文件路径，比如是 /data/video/Chinese/TV/12345.mp4
+# 然后对比 alist中这个视频的url，比如是 https://myalist.server.com:443        /onedrive/Chinese/TV/12345.mp4
+# 那么 drivePath 就填写 /onedrive , mountPath 就填写 /data/video 
+# 程序会自动将 /data/video/Chinese/TV/12345.mp4 转换为 /onedrive/Chinese/TV/12345.mp4 ，这样就能从alist获取到文件播放链接
+
+# 2. url 将 https://alsitServer.com 修改为你自己的alist服务器地址
+# 3. token 将 alist-mytoken 修改为你自己的alsit token，在alist 后台可以找到
+# 4. dbPath 修改为你自己的plex数据库路径，不同的安装方式路径不同，可以参考我这里的路径找一下，可以在网上搜一下

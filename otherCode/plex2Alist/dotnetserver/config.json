@@ -1,0 +1,12 @@
+{
+  "alist": {
+    "url": "http://localhost:5244/api/fs/get",
+    "token": "alist-af8caf0a-07ff-4684-904a-76d5332658c5IgUsZmaxJa6XDqjfD3y316yMd9PhFE35qp8z2JlaWrjTvyUEyGNUF35eAZovWH91",
+    "drivePath": "/amvAll"
+  },
+  "plex": {
+    //"dbPath": "/home/hj/Downloads/Telegram Desktop/com.plexapp.plugins.library.db",
+    "dbPath":"/home/hj/software/plex/config/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db",
+    "mountPath": "/data/amv"
+  }
+}
